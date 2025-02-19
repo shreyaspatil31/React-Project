@@ -1,0 +1,112 @@
+.editor-page {
+  width: 100%;
+  max-width: 1000px;
+  height: 70vh;
+  border-radius: 12px;
+}
+
+.editor-container {
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.editor-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.load-data-btn,
+.clear-editor-btn {
+  flex: 1;
+}
+
+.clear-editor-btn {
+  background-color: #ff6b6b;
+}
+
+.clear-editor-btn:hover {
+  background-color: #ff5252;
+}
+
+.ql-container {
+  min-height: 250px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ql-editor {
+  min-height: 200px;
+}
+
+.ql-toolbar {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.preview-section {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+.preview-section h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.preview-content {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 1.5rem;
+  min-height: 200px;
+}
+
+.preview-content h1,
+.preview-content h2 {
+  color: #5c3bc0;
+}
+
+.preview-content p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    padding: 1.5rem;
+  }
+
+  .editor-actions {
+    flex-direction: column;
+  }
+
+  .ql-container {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .editor-container {
+    padding: 1rem;
+  }
+
+  .preview-content {
+    padding: 1rem;
+  }
+
+  .ql-toolbar .ql-formats {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,59 @@
+/* Global Styles */
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Ensures the logo is on the left and links on the right */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4; /* Optional background color */
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-img {
+  height: 40px; /* Adjust the height as per your design */
+  width: auto;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar .nav-links .nav-link {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* Style the counter, form, and editor containers */
+.counter-container, .user-form-container, .rich-text-editor-container, .dashboard-container {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Input and Button Styles */
+input, button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Main content area */
+.main-content {
+  padding: 20px;
+}

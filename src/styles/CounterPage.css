@@ -1,0 +1,154 @@
+/* Counter Page Container */
+.counter-page {
+  width: 90%;
+  max-width: 500px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* Counter Container */
+.counter-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animated Background Fill */
+.background-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, #7f64d0, #9A76FF);
+  z-index: 0;
+  transition: height 0.3s ease-in-out; /* Smooth transition for height */
+}
+
+
+/* Counter Content */
+.counter-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Counter Title */
+.counter-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+/* Count Display */
+.count-display {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #5C3BC0;
+  text-shadow: 2px 2px 8px rgba(92, 59, 192, 0.2);
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+/* Counter Buttons */
+.counter-button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  min-width: 100px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.counter-button:hover {
+  opacity: 0.85;
+}
+
+/* Reset Button */
+.counter-button.reset {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.counter-button.reset:hover {
+  background-color: #ff5252;
+}
+
+/* 📱 Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .counter-page {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .count-display {
+    font-size: 3rem;
+  }
+
+  .button-group {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .counter-button {
+    width: 90px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .counter-page {
+    height: auto;
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .counter-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .count-display {
+    font-size: 2.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .counter-button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
