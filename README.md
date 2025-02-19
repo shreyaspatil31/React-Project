@@ -3,7 +3,7 @@
 A React application featuring counter, user form, rich text editor, and dashboard components with data persistence.
 
 # Link
-[react-project-git-main-shreyas-projects-780dee06.vercel.app](https://react-project-git-main-shreyas-projects-780dee06.vercel.app
+https://react-project-git-main-shreyas-projects-780dee06.vercel.app/
 
 ## Features
 
